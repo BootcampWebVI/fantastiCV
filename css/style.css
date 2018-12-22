@@ -4,8 +4,10 @@ main {
 }
 
 .hide{
-    display: none;
+    /* important dado que el inline-block de fa prevalece sobre el hide*/
+    display: none !important;
 }
+
 /*-----------------------------------------*/
 .home-header{
     background-image: url("https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg");

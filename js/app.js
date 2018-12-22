@@ -1,7 +1,9 @@
-import { setMenu } from './menu.js'
+//import { setMenu } from './menu.js'
+import { displayMenu } from './menu.js'
 
 function app(){
-    setMenu();
+    //setMenu()
+    displayMenu()
 }
 
 document.addEventListener('DOMContentLoaded', app)

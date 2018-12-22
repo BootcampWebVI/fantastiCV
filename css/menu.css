@@ -6,14 +6,14 @@ body >  header {
     height: 100%;
     color: #fff;
     }
-
-    #close-menu{
-        display: none;
-    }
     
 .logo-nav {
     width: 53%;
     margin-top: 0.5em;
+}
+
+.mobile i{
+    cursor: pointer;
 }
 
 #navigation-menu li{
@@ -50,7 +50,6 @@ body >  header {
 #navigation-menu a:hover span{ 
     width:5em; 
     overflow:visible; 
-
 }
 
 #navigation-menu a:hover{

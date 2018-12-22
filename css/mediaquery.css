@@ -1,7 +1,8 @@
 @media screen and (min-width: 700px) {
     .hide{
-        display: initial;
+        display: initial !important;
     }
+
     .mobile{
         display: none;
     }
@@ -19,7 +20,8 @@
     }
 
     #navigation-menu span{
-        width: auto;
+        width: 5em;
+        text-align: left;
     }
 
 }
