@@ -1,0 +1,17 @@
+.studies-content{
+    display: grid;
+    grid-template-columns: 6rem auto;
+    margin: 1rem;
+}
+
+.studies-pic img{
+    width: 6rem;
+}
+
+.studies-text{
+    padding-left: 1rem;
+}
+
+#studies .content-wrapper{
+    display: initial;
+}

@@ -1,0 +1,9 @@
+.whoiam-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+}
+
+.whoiam-pic img{
+    min-width: 10rem;
+}

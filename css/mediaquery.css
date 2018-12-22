@@ -22,6 +22,18 @@
     #navigation-menu span{
         width: 5em;
         text-align: left;
+        
+    }
+
+    .whoiam-pic img{
+        max-width: 20rem;
+        width: 100%;
+    }
+
+
+    #studies .content-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 
 }
