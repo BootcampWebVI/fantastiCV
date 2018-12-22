@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hector Vazquez">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fantastic CV</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo-nav" src="./assets/logo.png" alt="CV">
+        <nav class="mobile">
+            <i class="fas fa-bars" id="open-menu"></i>
+            <i class="fas fa-times" id="close-menu"></i>
+        </nav>
+
+        <nav class="tablet hide">
+            <ul id="navigation-menu">
+                <li><a class="home-nav" href="#home" class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Portada</span></a></li>
+                <li><a class="whoiam-nav" href="#whoiam">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Quien soy</span></a></li>
+                <li><a class="studies-nav" href="#studies">
+                        <i class="fas fa-university"></i>
+                        <span>Estudios</span></a></li>
+                <li><a class="work-nav" href="#work">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experiencia</span></a></li>
+                <li><a class="about-nav" href="#about">
+                        <i class="fab fa-fort-awesome-alt"></i>
+                        <span>About me</span></a></li>
+                <li><a class="contact-nav" href="#contact">
+                        <i class="fas fa-address-card"></i>
+                        <span>Contacto</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <header class="home-header">
+                <h2>HOME</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <article>
+                    <h3>Man must explore, and this is exploration at its greatest</h3>
+                    <p>Problems look mighty small from 150 miles up</p>
+                    <footer>
+                        <address> Posted by Start Bootstrap on September 24, 2018</address>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section id="whoiam">
+            <header class="whoiam-header">
+                <h2>WHOIAM</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <article>
+                    <h3>Man must explore, and this is exploration at its greatest</h3>
+                    <p>Problems look mighty small from 150 miles up</p>
+                    <footer>
+                        <address> Posted by Start Bootstrap on September 24, 2018</address>
+                    </footer>
+                    <!-- creo qe todo va en el viewport -->
+                </article>
+            </div>
+        </section>
+
+        <section id="studies">
+            <header class="studies-header">
+                <h2>STUDIES</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <!-- Estudios hechos -->
+            </div>
+        </section>
+
+        <section id="work">
+            <header class="work-header">
+                <h2>WORK</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <!-- Experiencia laboral -->
+            </div>
+        </section>
+
+        <section id="about">
+            <header class="about-header">
+                <h2>ABOUT</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <!-- Poner iframe de youtube -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <header class="contact-header">
+                <h2>CONTACT</h2>
+                <p>Subtexto debajo</p>
+            </header>
+            <div class="content-wrapper">
+                <!-- formulario -->
+                <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as
+                    soon as
+                    possible!</p>
+                <form action="" id="contact">
+                    <ul>
+                        <li class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </li>
+                        <li class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        </li>
+                        <li class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                        </li>
+                        <li class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="condiciones" id="condiciones" required>
+                            <label for="condiciones">Acepto las condiciones </label>
+                        </li>
+                        <li>
+                            <legend>Opciones</legend>
+                            <label for="opciones1">Opcion 1</label>
+                            <input type="radio" name="opciones" id="opciones1" value="opcion1" required>
+                            <label for="opciones2">Opcion 2</label>
+                            <input type="radio" name="opciones" id="opciones2" value="opcion2">
+                        </li>
+                        <li>
+                            <label for="selection">Selection</label>
+                            <select name="selection" id="selection" required>
+                                <option></option>
+                                <option value="op1">Opción 1</option>
+                                <option value="op2">Opción 2</option>
+                                <option value="op3">Opción 3</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <button class="boton" type="submit" id="send">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        footer works!
+        <!-- footer con informacion extra -->
+    </footer>
+</body>
+
+</html>

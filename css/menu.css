@@ -1,0 +1,67 @@
+body >  header {
+    background-color: #0e373d;
+    position: fixed;
+    width: 2.5rem;
+    text-align: center; 
+    height: 100%;
+    color: #fff;
+    }
+
+    #close-menu{
+        display: none;
+    }
+    
+.logo-nav {
+    width: 53%;
+    margin-top: 0.5em;
+}
+
+#navigation-menu li{
+    list-style:none;
+    height:1.5em;
+    width:1.4em;
+    background-color: #0e373d;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin: auto;
+}
+
+#navigation-menu span{
+    /* Container properties */
+    width:0;
+    left:26px;
+    position:absolute;
+    overflow:hidden;
+    height: 100%;
+    background-color: #0e373d;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#navigation-menu a{
+    display:block;
+    position:relative;
+    height: 100%;
+}
+
+#navigation-menu a:hover span{ 
+    width:5em; 
+    overflow:visible; 
+
+}
+
+#navigation-menu a:hover{
+    text-decoration:none;
+
+    /* CSS outer glow with the box-shadow property */
+    -moz-box-shadow:0 0 5px red;
+    -webkit-box-shadow:0 0 5px red;
+    box-shadow:0 0 5px pink;
+}
+
+.home-nav i{
+    vertical-align: middle;
+}
