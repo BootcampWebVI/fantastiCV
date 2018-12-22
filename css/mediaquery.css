@@ -8,11 +8,11 @@
     }
 
     body > header {
-        width: 7.5rem;
+        width: 8rem;
     }
 
     main{
-        margin-left: 7.5rem;
+        margin-left: 8rem;
     }
 
     #navigation-menu li{
@@ -20,7 +20,7 @@
     }
 
     #navigation-menu span{
-        width: 5em;
+        width: 6em;
         text-align: left;
         
     }
