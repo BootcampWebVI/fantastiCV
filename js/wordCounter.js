@@ -11,7 +11,7 @@ export function wordCount() {
     function wordInserted() {
         wordsInserted = textMessage.trim().split(/\s+/).length
         textMessage = document.querySelector('#message').value
-        textWordLeft.innerHTML = wordsInserted
+        textWordLeft.innerHTML = maxWords-wordsInserted
     }
 
     function writeCharacter() {

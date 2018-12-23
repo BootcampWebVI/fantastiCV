@@ -24,3 +24,8 @@
     margin: auto;
     text-align: justify;
 }
+
+.about-text ul {
+    font-family: 'Oswald', sans-serif;
+    list-style-image: url(../favicon.ico);
+}

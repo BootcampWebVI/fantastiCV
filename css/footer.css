@@ -1,0 +1,18 @@
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer-pic{
+    text-align: right; 
+}
+
+.footer-pic img{
+    width: 10rem;
+}
+
+.social-icon{
+    font-size: 2.5rem;
+    padding-top: 1em;  
+    color: var(--color-text);
+}

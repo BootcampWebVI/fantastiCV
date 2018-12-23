@@ -1,10 +1,27 @@
 :root {
-    --color-text: #05416f;
+    --color-text: #072083;
     --color-bg: #f4951d;
+    --color-titles: #FFE800;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 p, form{
     font-family: 'Oswald', sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    -webkit-text-stroke: 0.15rem black;
+    color: var(--color-titles);
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
 }
 
 h1, h2, h3, h4{
@@ -36,30 +53,55 @@ footer {
 section header{
     background-size: cover;
     height: 22rem;
+    text-align: center;
 }
+
+section header::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 2.5rem;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
 .home-header{
     background-image: url(../assets/home.jpg);
     background-size: cover; 
     height: 100vh;
 }
 
-section .title-wrapper{
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    min-height: -webkit-fill-available;
+.home-header .centered-content{
+    z-index: 1;
+    position: relative;
+    padding-top: 20em;
 }
 
-.home-header .centered-content{
-    padding-top: 24rem;
-    font-size: 3rem;
+.home-header .centered-content h1{
+    -webkit-animation: movecloser 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: movecloser 3s linear;
+    animation-fill-mode: forwards;
 }
+
+@keyframes movecloser {
+    0%   {font-size: 2rem; color: #000000}
+    25%  {font-size: 4rem; color: grey}
+    50%  {font-size: 6rem; color: var(--color-text)}
+    75%  {font-size: 8rem; color: var(--color-bg)}
+    100% {font-size: 5rem; color: var(--color-titles)}
+}
+
 
 .centered-content{
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 9rem;
-    color: #fff;
+    padding-top: 7rem;
 }
+
+.title-wrapper{
+    min-height: 22rem;
+    background-color:#0009;
+}
+
 .whoiam-header{
     background-image: url(../assets/whoiam.png);
 }

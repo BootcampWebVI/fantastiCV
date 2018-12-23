@@ -2,10 +2,7 @@ export function setScroll() {
     let aMenuItems = document.querySelectorAll("nav.tablet a")
     let aSections = document.querySelectorAll("section")
     let oOffsets = []
-    console.log("aMenuItems")
-    console.log(aMenuItems)
-    console.log("aSections")
-    console.log(aSections)
+
     prepareNavigation()
     window.addEventListener('scroll', changeMenuStyle)
 
@@ -14,8 +11,6 @@ export function setScroll() {
         aSections.forEach(
             (item) => oOffsets['#' + item.id] = item.offsetTop
         )
-        console.log("oOffsets")
-        console.log(oOffsets)
     }
 
     function changeMenuStyle() {
@@ -38,7 +33,6 @@ export function setScroll() {
         aMenuItems.forEach(
             (item) => item.classList.remove('active')
         )
-        console.log(aMenuItems[menuItem])
         aMenuItems[menuItem].classList.add('active')
     }
 }

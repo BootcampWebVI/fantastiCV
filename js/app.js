@@ -3,6 +3,7 @@ import { setForm } from './form.js'
 import { selectionChange } from './form.js'
 import { wordCount } from './wordCounter.js'
 import { setScroll } from './scrollspy.js'
+import { showMoreWork } from './showMore.js'
 
 function app(){
     displayMenu()
@@ -10,6 +11,7 @@ function app(){
     selectionChange()
     wordCount()
     setScroll()
+    showMoreWork()
 }
 
 document.addEventListener('DOMContentLoaded', app)

@@ -41,7 +41,7 @@ body >  header {
     position:absolute;
     overflow:hidden;
     height: 100%;
-    background-color: var(--color-bg);
+    background-color: inherit;
 
     /* CSS3 Transition: */
     -webkit-transition: 0.25s;

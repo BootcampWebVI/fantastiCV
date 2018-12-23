@@ -8,3 +8,22 @@
     width: 65%;
     max-height: 8rem;
 }
+
+.show-more {
+    font-size: 1.5rem;
+}
+
+.show-more:hover{
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+
+    cursor: pointer;
+}
+
+.work-text p{
+    text-align: justify;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
