@@ -5,41 +5,42 @@ export function setForm() {
     form.addEventListener('submit', enviar)
 
     function enviar(oEv) {
-        console.dir(oEv)
         oEv.preventDefault()
         oContact.name = document.querySelector('#name').value 
         oContact.email = document.querySelector('#email').value
         oContact.phone = document.querySelector('#phone').value
         oContact.message = document.querySelector('#message').value
         oContact.selection = getSelector(document.querySelector('#selection'))
-
+        
+        console.log("Formulario enviado!")
         console.log(oContact)
     }
 
     function getSelector(nodo) {
         let i = nodo.selectedIndex
-        return nodo[i].value
+        if (nodo[i].value == "other"){
+            let otherFieldValue = document.querySelector('#other-field').value
+            return otherFieldValue
+        }else{
+            return nodo[i].value
+        }
     }
 }
 
-export function showOtherField() {
+export function selectionChange() {
     let selectElement = document.querySelector('#selection')
     let otherField = document.querySelector('#other-field')
-    selectElement.addEventListener('change', function() {
-        console.dir(selectElement)
-        let index = selectElement.selectedIndex
-        let valor = selectElement[index].value
-        console.log(valor)
+    selectElement.addEventListener('change', showOtherField)
 
-        if ( valor == "other"){
-            console.log("llego")
+    function showOtherField() {
+        let index = selectElement.selectedIndex
+        let fieldValue = selectElement[index].value
+
+        if ( fieldValue == "other"){
             otherField.classList.remove('hidden-field')
         }else
         {
-            console.log("llego 2")
             otherField.classList.add('hidden-field')
         }
-
-        console.log("llego 3")
-    })
+    }
 }

@@ -66,3 +66,9 @@ input, textarea, select {
 .form-pic{
     display: none;
 }
+
+#messageCounter {
+    margin-left: auto;
+    width: 3rem;
+    font-size: 0.7rem;
+}

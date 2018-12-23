@@ -26,6 +26,12 @@ footer {
     display: none !important;
 }
 
+.active{
+    color: var(--color-bg);
+    background-color: var(--color-text); 
+}
+
+
 /*-----------------------------------------*/
 section header{
     background-size: cover;

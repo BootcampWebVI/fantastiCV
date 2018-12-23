@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <img class="logo-nav" src="./assets/assets goku/profile2.jpg" alt="CV">
+        <img class="logo-nav" src="./assets/pics/profile2.jpg" alt="CV">
         <nav class="mobile">
             <i class="fas fa-bars" id="open-menu"></i>
             <i class="fas fa-times hide" id="close-menu"></i>
@@ -33,7 +33,7 @@
 
         <nav class="tablet hide">
             <ul id="navigation-menu">
-                <li><a class="home-nav" href="#home" class="active">
+                <li><a class="home-nav active" href="#home">
                         <i class="fas fa-home"></i>
                         <span>Portada</span></a></li>
                 <li><a class="whoiam-nav" href="#whoiam">
@@ -90,7 +90,7 @@
                         </p>
                     </div>
                     <div class="whoiam-pic">
-                        <img src="./assets/assets goku/profile.jpg">
+                        <img src="./assets/pics/profile.jpg">
                     </div>
                 </article>
             </div>
@@ -107,7 +107,7 @@
             <div class="content-wrapper">
                 <article class="studies-content">
                     <div class="studies-pic">
-                        <img src="./assets/assets goku/studies1.png">
+                        <img src="./assets/pics/studies1.png">
                     </div>
                     <div class="studies-text">
                         <h3>Muten Roshi</h3>
@@ -116,7 +116,7 @@
                 </article>
                 <article class="studies-content">
                     <div class="studies-pic">
-                        <img src="./assets/assets goku/studies2.jpg">
+                        <img src="./assets/pics/studies2.jpg">
                     </div>
                     <div class="studies-text">
                         <h3>Kami Sama</h3>
@@ -125,7 +125,7 @@
                 </article>
                 <article class="studies-content">
                     <div class="studies-pic">
-                        <img src="./assets/assets goku/studies3.jpg">
+                        <img src="./assets/pics/studies3.jpg">
                     </div>
                     <div class="studies-text">
                         <h3>Señor Kaito del Norte</h3>
@@ -148,7 +148,7 @@
             <div class="content-wrapper">
                 <article class="work-content">
                     <div class="work-pic">
-                        <img src="./assets/assets goku/work1.jpg">
+                        <img src="./assets/pics/work1.jpg">
                     </div>
                     <div class="work-text">
                         <h3>Muten Roshi</h3>
@@ -157,7 +157,7 @@
                 </article>
                 <article class="work-content">
                     <div class="work-pic">
-                        <img src="./assets/assets goku/work2.jpg">
+                        <img src="./assets/pics/work2.jpg">
                     </div>
                     <div class="work-text">
                         <h3>Muten Roshi</h3>
@@ -166,7 +166,7 @@
                 </article>
                 <article class="work-content">
                     <div class="work-pic">
-                        <img src="./assets/assets goku/work3.png">
+                        <img src="./assets/pics/work3.png">
                     </div>
                     <div class="work-text">
                         <h3>Muten Roshi</h3>
@@ -175,7 +175,7 @@
                 </article>
                 <article class="work-content">
                     <div class="work-pic">
-                        <img src="./assets/assets goku/work4.jpg">
+                        <img src="./assets/pics/work4.jpg">
                     </div>
                     <div class="work-text">
                         <h3>Muten Roshi</h3>
@@ -232,16 +232,20 @@
                             </li>
                             <li class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                                <input type="tel" name="phone" id="phone" placeholder="Insert 9 digits" pattern="[0-9]{9}">
                             </li>
                             <li class="form-group">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                                <textarea name="message" id="message" rows="5" placeholder="Max 150 words"></textarea>
+                                
                             </li>
+                            <div id="messageCounter">
+                                words:<span id="wordsLeft">150</span>
+                            </div>
                         
                             <li>
                                 <label for="selection">¿Cómo me has conocido?</label>
-                                <select name="selection" id="selection" required>
+                                <select name="selection" id="selection">
                                     <option></option>
                                     <option value="op1">Dibujitos</option>
                                     <option value="op2">Revista</option>
@@ -251,11 +255,6 @@
                                 <input type="text" name="other" id="other-field" placeholder="Otros" class="hidden-field">
                             </li>
 
-                            <script type="text/javascript">
-                                let showOtherField = document.querySelector("#other");
-
-
-                            </script>
                         </ul>
                         <div class="align-btn-submit">
                             <button class="btn-submit" type="submit" id="send">Send</button>
@@ -263,7 +262,7 @@
                     </form>
 
                     <div class="form-pic">
-                        <img src="assets/assets goku/shenron.png">
+                        <img src="assets/pics/shenron.png">
                     </div>
                 </div>
             </div>

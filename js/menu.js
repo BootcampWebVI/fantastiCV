@@ -1,5 +1,4 @@
-
-export function displayMenu(oE){
+export function displayMenu(){
     let aMenuItems = document.querySelector("nav.tablet")
     let aOpenMenuIcon = document.querySelector('#open-menu')
     let aCloseMenuIcon = document.querySelector('#close-menu')
@@ -12,7 +11,5 @@ export function displayMenu(oE){
         aCloseMenuIcon.classList.toggle('hide')
         aOpenMenuIcon.classList.toggle('hide')
     }
-
-
 }
 
