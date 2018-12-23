@@ -19,11 +19,16 @@ body >  header {
     cursor: pointer;
 }
 
+#navigation-menu {
+    margin-top:50%;
+}
+
 #navigation-menu li{
     list-style:none;
     height:1.5em;
     width:1.4em;
     background-color: var(--color-bg);
+    padding-top: 2rem;
     padding-left: 0.2em;
     padding-right: 0.2em;
     margin: auto;
@@ -52,16 +57,21 @@ body >  header {
 
 #navigation-menu a:hover span{ 
     width:6em; 
-    overflow:visible; 
+    overflow:visible;
+
+
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
 }
 
 #navigation-menu a:hover{
     text-decoration:none;
 
     /* CSS outer glow with the box-shadow property */
-    -moz-box-shadow:0 0 5px red;
-    -webkit-box-shadow:0 0 5px red;
-    box-shadow:0 0 5px pink;
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
 }
 
 .home-nav i{

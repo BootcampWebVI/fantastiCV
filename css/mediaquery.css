@@ -30,10 +30,12 @@
         width: 100%;
     }
 
-
     #studies .content-wrapper{
         display: grid;
         grid-template-columns: auto auto auto;
     }
 
+    .form-pic{
+        display: inherit;
+    }
 }

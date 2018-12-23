@@ -3,3 +3,24 @@
     margin-bottom: 2rem;
     text-align: center;
 }
+
+.resp-container{
+    position: relative;
+    overflow: hidden;
+    padding-top: 52%;
+}
+
+.resp-iframe{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    width: 75%;
+    height: 75%;
+    border: 0;
+}
+
+.about-text{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}

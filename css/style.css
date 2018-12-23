@@ -3,7 +3,7 @@
     --color-bg: #f4951d;
 }
 
-p{
+p, form{
     font-family: 'Oswald', sans-serif;
 }
 
@@ -15,6 +15,10 @@ main {
     background-color: var(--color-bg);
     margin-left: 2.5rem;
     color: var(--color-text);
+}
+
+footer {
+    background-color: var(--color-bg);
 }
 
 .hide{

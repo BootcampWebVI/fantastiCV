@@ -3,10 +3,66 @@
     margin-right: auto;
     margin-left: auto;
 }
+.form-wrapper{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
 
 #contact-form{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
     margin-top: 2rem;
+}
+
+#contact-form ul{
+display: grid;
+}
+
+#contact-form ul li, #other-field{
+    margin: 0.2rem;
+}
+
+.hidden-field{
+    display: none;
+}
+
+.contact-text{
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+input, textarea, select {
+    float: right;
+    width: 70%;
+    border: solid 2px #fff;
+    box-shadow: -1px 1px 1px #fff;
+    border-radius: 0.25rem;
+}
+
+.btn-submit{
+    margin-left: auto;
+    background: var(--color-text);
+    color: var(--color-bg);
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.btn-submit:hover{
+    background: var(--color-bg);
+    color: var(--color-text);
+    
+    -moz-box-shadow:0 0 0.15rem #fff;
+    -webkit-box-shadow:0 0 0.15rem #fff;
+    box-shadow:0 0 5px 0.15rem #fff;
+}
+
+.align-btn-submit {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-pic{
+    display: none;
 }
